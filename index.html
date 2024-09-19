@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            body {
+  font-family: Calibri Body, sans-serif;
+  background-color: #be3d4e;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(222, 214, 214);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #00796b;
+}
+
+.weather-card {
+  margin: 20px 0;
+  padding: 00px;
+  border-radius: 8px;
+  background-color: #6c7170;
+  transition: background-color 0.3s;
+}
+
+.weather-card:hover {
+  background-color: #0beed7;
+}
+
+#city-name {
+  font-size: 1.8em;
+  color: #004d40;
+}
+
+#temperature {
+  font-size: 1.5em;
+  color: #00796b;
+}
+
+#description {
+  color: #00695c;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1>Weather App</h1>
+    <input type="text" id="city" placeholder="Enter city name"/>
+    <button id="getWeather">Get Weather</button>
+    <div id="weather" style="margin-top: 20px;"></div>
+    <script src="App.js"></script>
+</body>
+</html>
